@@ -12,7 +12,7 @@ const FB_LINK = 'https://www.facebook.com/vip.limon.gamer';
 const fs = require('fs-extra');
 const { loadImage, createCanvas, registerFont } = require("canvas");
 const request = require('request');
-//const { join } = require('path');
+/const { join } = require('path');
 const axios = require('axios');
 const jimp = require("jimp")
 const fontlink = 'https://drive.google.com/u/0/uc?id=1ZwFqYB-x6S9MjPfYm3t3SP1joohGl4iw&export=download'
@@ -52,7 +52,7 @@ module.exports.run = async function({ api, event, Users }) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
     
     let gifUrl = 'https://i.imgur.com/CSiu9bJ.gif';
-let gifPath = __dirname + '/cache/join/join.gif';
+let gifPath = __dirname + '/cache/join/Join.gif';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
